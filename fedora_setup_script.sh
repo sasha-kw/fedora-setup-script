@@ -1,15 +1,49 @@
 #!/bin/bash
+set -euo pipefail
 
 #update os
-sudo dnf update -y
+sudo dnf update -y --refresh
 
 #curl dotfiles
 
-#install iptables and configure
+# remove firewalld and install iptables-services
+sudo dnf remove -y firewalld
+sudo dnf install -y iptables-services
+
+# set restrictive umask for iptables file creation and store existing one to reset after
+old_umask=$(umask)
+umask 077
+
+# ip6tables config
+cat <<EOF | sudo tee /etc/sysconfig/ip6tables
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+COMMIT
+EOF
+
+# iptables config
+cat <<EOF | sudo tee /etc/sysconfig/iptables
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+COMMIT
+EOF
+
+# enable and start iptables
+sudo systemctl enable iptables ip6tables
+sudo systemctl start iptables ip6tables
+
+# reset umask
+umask "$old_umask"
 
 #install protonvpn cli
 sudo dnf install -y openvpn dialog python3-pip python3-setuptools
-sudo pip3 install protonvpn-cli
+pip3 install --user protonvpn-cli
 
 #install extra programs
 sudo dnf install -y \
