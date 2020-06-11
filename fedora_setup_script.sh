@@ -47,27 +47,27 @@ pip3 install --user protonvpn-cli
 
 #install extra programs
 sudo dnf install -y \
-        gimp.x86_64 \
+        gimp.x86_64 \ #image editing software
         keepassxc.x86_64 \ #password manager
-        nextcloud-client.x86_64 \
+        nextcloud-client.x86_64 \ #cloud storage client
         nextcloud-client-nautilus.x86_64 \
         thunderbird.x86_64 \ #email client
         thunderbird-enigmail.noarch \ #GPG GUI tool
-        htop.x86_64 \
-        git \
+        htop.x86_64 \ #resource monitor
+        git \ #version control
         nmap.x86_64 \ #network scanner
         ShellCheck.x86_64 \ #bash static analysis tool
-        wget.x86_64 \
+        wget.x86_64 \ 
         wireshark.x86_64 \ #network analysis tool
         yubikey-manager.noarch \ #yubikey personalisation tool
-        yubikey-personalization-gui.x86_64 \ #yubikey personalisation tool gui
+        yubikey-personalization-gui.x86_64 \ #yubikey personalisation tool GUI
         jq.x86_64 \ #json processor
         bc.x86_64 \ #command line calculator
-        android-tools.x86_64 \
-        rsync.x86_64 \
+        android-tools.x86_64 \ 
+        rsync.x86_64 \ #file synchronizing
         rclone.x86_64 \ #rsync for cloud storage
-        zbar.x86_64 \
-        strace.x86_64 \
+        zbar.x86_64 \ #bar code reader
+        strace.x86_64 \ #tracks system calls
         tldr.noarch \ #similar to man pages with examples
         most.x86_64 \ #pager
         pylint.noarch \ #python static analysis tool
