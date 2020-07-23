@@ -49,8 +49,8 @@ pip3 install --user protonvpn-cli
 sudo dnf install -y \
         gimp.x86_64 \ #image editing software
         keepassxc.x86_64 \ #password manager
-        nextcloud-client.x86_64 \ #cloud storage client
-        nextcloud-client-nautilus.x86_64 \
+        # nextcloud-client.x86_64 \ #cloud storage client
+        # nextcloud-client-nautilus.x86_64 \
         thunderbird.x86_64 \ #email client
         thunderbird-enigmail.noarch \ #GPG GUI tool
         htop.x86_64 \ #resource monitor
