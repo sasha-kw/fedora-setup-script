@@ -76,6 +76,8 @@ sudo dnf install -y \
         pylint.noarch \ #python static analysis tool
         rdesktop.x86_64 \ #RDP client
         powerline.x86_64
+        tmux-powerline.noarch
+        vim-powerline.noarch
 
 #clean up
 sudo dnf clean all
