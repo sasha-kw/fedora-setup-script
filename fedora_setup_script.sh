@@ -75,6 +75,7 @@ sudo dnf install -y \
         exif.x86_64 \ #jpg meta data tool
         pylint.noarch \ #python static analysis tool
         rdesktop.x86_64 \ #RDP client
+        powerline.x86_64
 
 #clean up
 sudo dnf clean all
