@@ -75,9 +75,9 @@ sudo dnf install -y \
         exif.x86_64 \ #jpg meta data tool
         pylint.noarch \ #python static analysis tool
         rdesktop.x86_64 \ #RDP client
-        powerline.x86_64
-        tmux-powerline.noarch
-        vim-powerline.noarch
+        powerline.x86_64 \ #status-line/prompt utility
+        tmux-powerline.noarch \ #status-line/prompt utility tmux plugin
+        vim-powerline.noarch #status-line/prompt utility vim plugin
 
 #clean up
 sudo dnf clean all
