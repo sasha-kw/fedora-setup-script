@@ -77,6 +77,7 @@ sudo dnf install -y \
         rdesktop.x86_64 \ #RDP client
         powerline.x86_64 \ #status-line/prompt utility
         tmux-powerline.noarch \ #status-line/prompt utility tmux plugin
+        ghostwriter.x86_64 \ #markdown editor
         vim-powerline.noarch #status-line/prompt utility vim plugin
 
 #clean up
