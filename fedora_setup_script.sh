@@ -78,6 +78,7 @@ sudo dnf install -y \
         powerline.x86_64 \ #status-line/prompt utility
         tmux-powerline.noarch \ #status-line/prompt utility tmux plugin
         #marker.x86_64 \ #markdown editor
+        firejail \
         vim-powerline.noarch #status-line/prompt utility vim plugin
 
 #clean up
