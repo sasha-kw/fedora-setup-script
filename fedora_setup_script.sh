@@ -79,6 +79,7 @@ sudo dnf install -y \
         tmux-powerline.noarch \ #status-line/prompt utility tmux plugin
         #marker.x86_64 \ #markdown editor
         firejail \
+        pandoc.x86_64 \ # document converter
         vim-powerline.noarch #status-line/prompt utility vim plugin
 
 #clean up
