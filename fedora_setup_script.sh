@@ -80,7 +80,8 @@ sudo dnf install -y \
         #marker.x86_64 \ #markdown editor
         pciutils.x86_64 \ #PCI bus related utilities
         firejail \
-        pandoc.x86_64 \ # document converter
+        xournalpp \ #handwriting note taking
+        pandoc.x86_64 \ #document converter
         vim-powerline.noarch #status-line/prompt utility vim plugin
 
 #clean up
