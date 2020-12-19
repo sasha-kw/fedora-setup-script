@@ -67,6 +67,7 @@ sudo dnf install -y \
         rsync.x86_64 \ #file synchronizing
         rclone.x86_64 \ #rsync for cloud storage
         zbar.x86_64 \ #bar code reader
+        qrencode.x86_64 \ # qr code generator
         strace.x86_64 \ #tracks system calls
         tldr.noarch \ #similar to man pages with examples
         most.x86_64 \ #pager
