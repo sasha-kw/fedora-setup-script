@@ -82,6 +82,7 @@ sudo dnf install -y \
         xournalpp \ #handwriting note taking
         pandoc.x86_64 \ #document converter
         vim-powerline.noarch #status-line/prompt utility vim plugin
+        # https://github.com/charmbracelet/glow/releases/download/v1.2.1/glow_1.2.1_linux_amd64.rpm
 
 #clean up
 sudo dnf clean all
