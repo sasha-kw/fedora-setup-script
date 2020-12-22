@@ -4,7 +4,7 @@ set -euo pipefail
 #update os
 sudo dnf update -y --refresh
 
-#curl dotfiles
+#TODO curl dotfiles
 
 # remove firewalld and install iptables-services
 sudo dnf remove -y firewalld
@@ -41,9 +41,27 @@ sudo systemctl start iptables ip6tables
 # reset umask
 umask "$old_umask"
 
-#install protonvpn cli
+# install protonvpn cli
 sudo dnf install -y openvpn dialog python3-pip python3-setuptools
 pip3 install --user protonvpn-cli
+
+# resolved config
+cat <<EOF | sudo tee /etc/systemd/resolved.conf
+[Resolve]
+DNSOverTLS=yes
+DNSSEC=yes
+DNS=1.1.1.2#cloudflare-dns.com 1.0.0.2#cloudflare-dns.com
+FallbackDNS=1.1.1.2 1.0.0.2 1.1.1.1 1.0.0.1 8.8.8.8 8.8.4.4
+LLMNR=no
+MulticastDNS=no
+Cache=yes
+DNSStubListener=yes
+ReadEtcHosts=yes
+ResolveUnicastSingleLabel=no
+EOF
+
+#restart resolved
+sudo systemctl restart systemd-resolved
 
 #install extra programs
 sudo dnf install -y \
@@ -82,7 +100,7 @@ sudo dnf install -y \
         xournalpp \ #handwriting note taking
         pandoc.x86_64 \ #document converter
         vim-powerline.noarch #status-line/prompt utility vim plugin
-        # https://github.com/charmbracelet/glow/releases/download/v1.2.1/glow_1.2.1_linux_amd64.rpm
+        # TODO https://github.com/charmbracelet/glow/releases/download/v1.2.1/glow_1.2.1_linux_amd64.rpm
 
 #clean up
 sudo dnf clean all
