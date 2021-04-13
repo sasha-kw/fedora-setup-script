@@ -1,10 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-#update os
+# update os
 sudo dnf update -y --refresh
 
-#TODO curl dotfiles
+# TODO curl dotfiles
 
 # remove firewalld and install iptables-services
 sudo dnf remove -y firewalld
@@ -60,13 +60,13 @@ ReadEtcHosts=yes
 ResolveUnicastSingleLabel=no
 EOF
 
-#restart resolved
+# restart resolved
 sudo systemctl restart systemd-resolved
 
-#install extra programs
+# install extra programs
 sudo dnf install -y \
-        gimp.x86_64 \ #image editing software
-        keepassxc.x86_64 \ #password manager
+        gimp.x86_64 \ # image editing software
+        keepassxc.x86_64 \ # password manager
         htop.x86_64 \ # resource monitor
         git \ # version control
         nmap.x86_64 \ # network scanner
@@ -87,7 +87,7 @@ sudo dnf install -y \
         cheat.x86_64 \ # similar to tldr
         most.x86_64 \ # pager
         blueman.x86_64 \ # bluetooth manager
-        pdfarranger.noarch \ #PDF file merging, rearranging, and splitting
+        pdfarranger.noarch \ # PDF file merging, rearranging, and splitting
         exif.x86_64 \ # jpg meta data tool
         pylint.noarch \ # python static analysis tool
         rdesktop.x86_64 \ # RDP client
@@ -97,10 +97,10 @@ sudo dnf install -y \
         firejail \ # security tool
         xournalpp \ # handwriting note taking
         pandoc.x86_64 \ # document converter
-        vim-powerline.noarch #status-line/prompt utility vim plugin
+        vim-powerline.noarch # status-line/prompt utility vim plugin
         lynis.noarch \ # security and system auditing tool
         glow.x86_64 \ # markdown on CLI 
         pdfgrep.x86_64 # pdf searching tool
 
-#clean up
+# clean up
 sudo dnf clean all
