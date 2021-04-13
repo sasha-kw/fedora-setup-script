@@ -67,41 +67,40 @@ sudo systemctl restart systemd-resolved
 sudo dnf install -y \
         gimp.x86_64 \ #image editing software
         keepassxc.x86_64 \ #password manager
-        thunderbird.x86_64 \ #email client
-        thunderbird-enigmail.noarch \ #GPG GUI tool
-        htop.x86_64 \ #resource monitor
-        git \ #version control
-        nmap.x86_64 \ #network scanner
-        ShellCheck.x86_64 \ #bash static analysis tool
-        wget.x86_64 \ 
-        wireshark.x86_64 \ #network analysis tool
-        yubikey-manager.noarch \ #yubikey personalisation tool
-        yubikey-personalization-gui.x86_64 \ #yubikey personalisation tool GUI
-        jq.x86_64 \ #json processor
-        bc.x86_64 \ #command line calculator
-        android-tools.x86_64 \ 
-        rsync.x86_64 \ #file synchronizing
-        rclone.x86_64 \ #rsync for cloud storage
-        zbar.x86_64 \ #bar code reader
+        htop.x86_64 \ # resource monitor
+        git \ # version control
+        nmap.x86_64 \ # network scanner
+        ShellCheck.x86_64 \ # bash static analysis tool
+        wget.x86_64 \ # download tool
+        wireshark.x86_64 \ # network analysis tool
+        yubikey-manager.noarch \ # yubikey personalisation tool
+        yubikey-personalization-gui.x86_64 \ # yubikey personalisation tool GUI
+        jq.x86_64 \ # json processor
+        bc.x86_64 \ # command line calculator
+        android-tools.x86_64 \ # adb/fastboot ect
+        rsync.x86_64 \ # file synchronizing
+        rclone.x86_64 \ # rsync for cloud storage
+        zbar.x86_64 \ # bar code reader
         qrencode.x86_64 \ # qr code generator
-        strace.x86_64 \ #tracks system calls
-        tldr.noarch \ #similar to man pages with examples
-        most.x86_64 \ #pager
-        blueman.x86_64 \ #bluetooth manager
+        strace.x86_64 \ # tracks system calls
+        tldr.noarch \ # similar to man pages with examples
+        cheat.x86_64 \ # similar to tldr
+        most.x86_64 \ # pager
+        blueman.x86_64 \ # bluetooth manager
         pdfarranger.noarch \ #PDF file merging, rearranging, and splitting
-        exif.x86_64 \ #jpg meta data tool
-        pylint.noarch \ #python static analysis tool
-        rdesktop.x86_64 \ #RDP client
-        powerline.x86_64 \ #status-line/prompt utility
-        tmux-powerline.noarch \ #status-line/prompt utility tmux plugin
-        #marker.x86_64 \ #markdown editor
-        pciutils.x86_64 \ #PCI bus related utilities
-        firejail \
-        xournalpp \ #handwriting note taking
-        pandoc.x86_64 \ #document converter
+        exif.x86_64 \ # jpg meta data tool
+        pylint.noarch \ # python static analysis tool
+        rdesktop.x86_64 \ # RDP client
+        powerline.x86_64 \ # status-line/prompt utility
+        tmux-powerline.noarch \ # status-line/prompt utility tmux plugin
+        pciutils.x86_64 \ # PCI bus related utilities
+        firejail \ # security tool
+        xournalpp \ # handwriting note taking
+        pandoc.x86_64 \ # document converter
         vim-powerline.noarch #status-line/prompt utility vim plugin
-        lynis.noarch \ #security and system auditing tool
-        # TODO https://github.com/charmbracelet/glow/releases/download/v1.2.1/glow_1.2.1_linux_amd64.rpm
+        lynis.noarch \ # security and system auditing tool
+        glow.x86_64 \ # markdown on CLI 
+        pdfgrep.x86_64 # pdf searching tool
 
 #clean up
 sudo dnf clean all
