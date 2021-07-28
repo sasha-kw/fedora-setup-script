@@ -99,7 +99,8 @@ sudo dnf install -y \
         pandoc.x86_64 \ # document converter
         vim-powerline.noarch # status-line/prompt utility vim plugin
         lynis.noarch \ # security and system auditing tool
-        glow.x86_64 \ # markdown on CLI 
+        glow.x86_64 \ # markdown on CLI
+        calibre.x86_64 \ # ebook manager
         pdfgrep.x86_64 # pdf searching tool
 
 # clean up
