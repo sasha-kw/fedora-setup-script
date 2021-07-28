@@ -85,7 +85,6 @@ sudo dnf install -y \
         strace.x86_64 \ # tracks system calls
         tldr.noarch \ # similar to man pages with examples
         cheat.x86_64 \ # similar to tldr
-        most.x86_64 \ # pager
         blueman.x86_64 \ # bluetooth manager
         pdfarranger.noarch \ # PDF file merging, rearranging, and splitting
         exif.x86_64 \ # jpg meta data tool
@@ -101,6 +100,7 @@ sudo dnf install -y \
         lynis.noarch \ # security and system auditing tool
         glow.x86_64 \ # markdown on CLI
         calibre.x86_64 \ # ebook manager
+        inkscape.x86_64 \ # drawing tool
         pdfgrep.x86_64 # pdf searching tool
 
 # clean up
