@@ -68,7 +68,7 @@ sudo dnf install -y \
         gimp.x86_64 \ # image editing software
         keepassxc.x86_64 \ # password manager
         htop.x86_64 \ # resource monitor
-        git \ # version control
+        git.x86_64 \ # version control
         nmap.x86_64 \ # network scanner
         ShellCheck.x86_64 \ # bash static analysis tool
         wget.x86_64 \ # download tool
@@ -93,14 +93,24 @@ sudo dnf install -y \
         powerline.x86_64 \ # status-line/prompt utility
         tmux-powerline.noarch \ # status-line/prompt utility tmux plugin
         pciutils.x86_64 \ # PCI bus related utilities
-        firejail \ # security tool
-        xournalpp \ # handwriting note taking
+        firejail.x86_64 \ # security tool
+        xournalpp.x86_64 \ # handwriting note taking
         pandoc.x86_64 \ # document converter
         vim-powerline.noarch # status-line/prompt utility vim plugin
         lynis.noarch \ # security and system auditing tool
         glow.x86_64 \ # markdown on CLI
         calibre.x86_64 \ # ebook manager
         inkscape.x86_64 \ # drawing tool
+        audacity.x86_64 \ # audio tool
+        blender.x86_64 \ # 3D tool
+        firefox.x86_64 \ # web browser
+        ftp.x86_64 \ # file transfer tool
+        i3.x86_64 \ # tiling window manager
+        pam_yubico.x86_64 \ # Pluggable Authentication Module for yubikeys
+        spectre-meltdown-checker.noarch \ # Spectre & Meltdown checker
+        wireguard-tools.x86_64 \ # VPN
+        openvpn.x86_64 \ # VPN
+        wine.x86_64 \ # windows compatibility layer
         pdfgrep.x86_64 # pdf searching tool
 
 # clean up
