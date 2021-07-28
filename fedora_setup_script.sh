@@ -68,6 +68,7 @@ sudo dnf install -y \
         gimp.x86_64 \ # image editing software
         keepassxc.x86_64 \ # password manager
         htop.x86_64 \ # resource monitor
+        powertop.x86_64 \ # power monitor
         git.x86_64 \ # version control
         nmap.x86_64 \ # network scanner
         ShellCheck.x86_64 \ # bash static analysis tool
