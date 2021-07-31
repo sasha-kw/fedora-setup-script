@@ -112,6 +112,7 @@ sudo dnf install -y \
         wireguard-tools.x86_64 \ # VPN
         openvpn.x86_64 \ # VPN
         wine.x86_64 \ # windows compatibility layer
+        arduino.noarch \ # arduino IDE
         pdfgrep.x86_64 # pdf searching tool
 
 # clean up
