@@ -64,56 +64,56 @@ EOF
 sudo systemctl restart systemd-resolved
 
 # install extra programs
-sudo dnf install -y \
-        gimp.x86_64 \ # image editing software
-        keepassxc.x86_64 \ # password manager
-        htop.x86_64 \ # resource monitor
-        powertop.x86_64 \ # power monitor
-        git.x86_64 \ # version control
-        nmap.x86_64 \ # network scanner
-        ShellCheck.x86_64 \ # bash static analysis tool
-        wget.x86_64 \ # download tool
-        wireshark.x86_64 \ # network analysis tool
-        yubikey-manager.noarch \ # yubikey personalisation tool
-        yubikey-personalization-gui.x86_64 \ # yubikey personalisation tool GUI
-        jq.x86_64 \ # json processor
-        bc.x86_64 \ # command line calculator
-        android-tools.x86_64 \ # adb/fastboot ect
-        rsync.x86_64 \ # file synchronizing
-        rclone.x86_64 \ # rsync for cloud storage
-        zbar.x86_64 \ # bar code reader
-        qrencode.x86_64 \ # qr code generator
-        strace.x86_64 \ # tracks system calls
-        tldr.noarch \ # similar to man pages with examples
-        cheat.x86_64 \ # similar to tldr
-        blueman.x86_64 \ # bluetooth manager
-        pdfarranger.noarch \ # PDF file merging, rearranging, and splitting
-        exif.x86_64 \ # jpg meta data tool
-        pylint.noarch \ # python static analysis tool
-        rdesktop.x86_64 \ # RDP client
-        powerline.x86_64 \ # status-line/prompt utility
-        tmux-powerline.noarch \ # status-line/prompt utility tmux plugin
-        pciutils.x86_64 \ # PCI bus related utilities
-        firejail.x86_64 \ # security tool
-        xournalpp.x86_64 \ # handwriting note taking
-        pandoc.x86_64 \ # document converter
-        vim-powerline.noarch # status-line/prompt utility vim plugin
-        lynis.noarch \ # security and system auditing tool
-        glow.x86_64 \ # markdown on CLI
-        calibre.x86_64 \ # ebook manager
-        inkscape.x86_64 \ # drawing tool
-        audacity.x86_64 \ # audio tool
-        blender.x86_64 \ # 3D tool
-        firefox.x86_64 \ # web browser
-        ftp.x86_64 \ # file transfer tool
-        i3.x86_64 \ # tiling window manager
-        pam_yubico.x86_64 \ # Pluggable Authentication Module for yubikeys
-        spectre-meltdown-checker.noarch \ # Spectre & Meltdown checker
-        wireguard-tools.x86_64 \ # VPN
-        openvpn.x86_64 \ # VPN
-        wine.x86_64 \ # windows compatibility layer
-        arduino.noarch \ # arduino IDE
-        pdfgrep.x86_64 # pdf searching tool
+sudo dnf install -y vim # text editor
+sudo dnf install -y gimp.x86_64 # image editing software
+sudo dnf install -y keepassxc.x86_64 # password manager
+sudo dnf install -y htop.x86_64 # resource monitor
+sudo dnf install -y powertop.x86_64 # power monitor
+sudo dnf install -y git.x86_64 # version control
+sudo dnf install -y nmap.x86_64 # network scanner
+sudo dnf install -y ShellCheck.x86_64 # bash static analysis tool
+sudo dnf install -y wget.x86_64 # download tool
+sudo dnf install -y wireshark.x86_64 # network analysis tool
+sudo dnf install -y yubikey-manager.noarch # yubikey personalisation tool
+sudo dnf install -y yubikey-personalization-gui.x86_64 # yubikey personalisation tool GUI
+sudo dnf install -y jq.x86_64 # json processor
+sudo dnf install -y bc.x86_64 # command line calculator
+sudo dnf install -y android-tools.x86_64 # adb/fastboot ect
+sudo dnf install -y rsync.x86_64 # file synchronizing
+sudo dnf install -y rclone.x86_64 # rsync for cloud storage
+sudo dnf install -y zbar.x86_64 # bar code reader
+sudo dnf install -y qrencode.x86_64 # qr code generator
+sudo dnf install -y strace.x86_64 # tracks system calls
+sudo dnf install -y tldr.noarch # similar to man pages with examples
+sudo dnf install -y cheat.x86_64 # similar to tldr
+sudo dnf install -y blueman.x86_64 # bluetooth manager
+sudo dnf install -y pdfarranger.noarch # PDF file merging, rearranging, and splitting
+sudo dnf install -y exif.x86_64 # jpg meta data tool
+sudo dnf install -y pylint.noarch # python static analysis tool
+sudo dnf install -y rdesktop.x86_64 # RDP client
+sudo dnf install -y powerline.x86_64 # status-line/prompt utility
+sudo dnf install -y tmux-powerline.noarch # status-line/prompt utility tmux plugin
+sudo dnf install -y pciutils.x86_64 # PCI bus related utilities
+sudo dnf install -y firejail.x86_64 # security tool
+sudo dnf install -y xournalpp.x86_64 # handwriting note taking
+sudo dnf install -y pandoc.x86_64 # document converter
+sudo dnf install -y vim-powerline.noarch # status-line/prompt utility vim plugin
+sudo dnf install -y lynis.noarch # security and system auditing tool
+sudo dnf install -y glow.x86_64 # markdown on CLI
+sudo dnf install -y calibre.x86_64 # ebook manager
+sudo dnf install -y inkscape.x86_64 # drawing tool
+sudo dnf install -y audacity.x86_64 # audio tool
+sudo dnf install -y blender.x86_64 # 3D tool
+sudo dnf install -y firefox.x86_64 # web browser
+sudo dnf install -y ftp.x86_64 # file transfer tool
+sudo dnf install -y i3.x86_64 # tiling window manager
+sudo dnf install -y pam_yubico.x86_64 # Pluggable Authentication Module for yubikeys
+sudo dnf install -y spectre-meltdown-checker.noarch # Spectre & Meltdown checker
+sudo dnf install -y wireguard-tools.x86_64 # VPN
+sudo dnf install -y openvpn.x86_64 # VPN
+sudo dnf install -y wine.x86_64 # windows compatibility layer
+sudo dnf install -y arduino.noarch # arduino IDE
+sudo dnf install -y pdfgrep.x86_64 # pdf searching tool
 
 # clean up
 sudo dnf clean all
