@@ -65,6 +65,7 @@ sudo systemctl restart systemd-resolved
 
 # install extra programs
 sudo dnf install -y vim # text editor
+sudo dnf install -y vim-airline.noarch # vim status-line/prompt utility
 sudo dnf install -y gimp.x86_64 # image editing software
 sudo dnf install -y keepassxc.x86_64 # password manager
 sudo dnf install -y htop.x86_64 # resource monitor
@@ -91,8 +92,6 @@ sudo dnf install -y pdfarranger.noarch # PDF file merging, rearranging, and spli
 sudo dnf install -y exif.x86_64 # jpg meta data tool
 sudo dnf install -y pylint.noarch # python static analysis tool
 sudo dnf install -y rdesktop.x86_64 # RDP client
-sudo dnf install -y powerline.x86_64 # status-line/prompt utility
-sudo dnf install -y tmux-powerline.noarch # status-line/prompt utility tmux plugin
 sudo dnf install -y pciutils.x86_64 # PCI bus related utilities
 sudo dnf install -y firejail.x86_64 # security tool
 sudo dnf install -y xournalpp.x86_64 # handwriting note taking
