@@ -97,6 +97,7 @@ sudo dnf install -y firejail.x86_64 # security tool
 sudo dnf install -y xournalpp.x86_64 # handwriting note taking
 sudo dnf install -y pandoc.x86_64 # document converter
 sudo dnf install -y vim-jedi.noarch # python autocompletion
+sudo dnf install -y poetry.noarch # python project management tool
 sudo dnf install -y lynis.noarch # security and system auditing tool
 sudo dnf install -y glow.x86_64 # markdown on CLI
 sudo dnf install -y calibre.x86_64 # ebook manager
