@@ -66,6 +66,7 @@ sudo systemctl restart systemd-resolved
 # install extra programs
 sudo dnf install -y vim # text editor
 sudo dnf install -y vim-airline.noarch # vim status-line/prompt utility
+sudo dnf install -y vim-trailing-whitespace.noarch # vim whitespace plugin
 sudo dnf install -y gimp.x86_64 # image editing software
 sudo dnf install -y keepassxc.x86_64 # password manager
 sudo dnf install -y htop.x86_64 # resource monitor
