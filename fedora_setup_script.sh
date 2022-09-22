@@ -109,6 +109,7 @@ sudo dnf install -y calibre.x86_64 # ebook manager
 sudo dnf install -y inkscape.x86_64 # drawing tool
 sudo dnf install -y audacity.x86_64 # audio tool
 sudo dnf install -y blender.x86_64 # 3D tool
+sudo dnf install -y godot.x86_64 # game engine
 sudo dnf install -y firefox.x86_64 # web browser
 sudo dnf install -y ftp.x86_64 # file transfer tool
 sudo dnf install -y i3.x86_64 # tiling window manager
