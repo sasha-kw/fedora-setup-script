@@ -123,6 +123,7 @@ sudo dnf install -y chromium.x86_64 # web browser
 sudo dnf install -y cfn-lint # AWS CloudFormation linter
 sudo dnf install -y awscli # AWS CLI
 sudo dnf install -y python3-boto3.noarch # Python AWS SDK
+sudo dnf install -y hugo.x86_64 # static website generator
 
 # set vim as default text editor
 sudo dnf remove -y nano-default-editor
