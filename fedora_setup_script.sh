@@ -4,7 +4,8 @@ set -euo pipefail
 # update os
 sudo dnf update -y --refresh
 
-# TODO curl dotfiles
+# curl dotfiles
+curl https://raw.githubusercontent.com/sasha-kw/vim-config/master/.vimrc -o $HOME/.vimrc
 
 # remove firewalld and install iptables-services
 sudo dnf remove -y firewalld
@@ -67,6 +68,8 @@ sudo systemctl restart systemd-resolved
 sudo dnf install -y vim # text editor
 sudo dnf install -y vim-airline.noarch # vim status-line/prompt utility
 sudo dnf install -y vim-trailing-whitespace.noarch # vim whitespace plugin
+sudo dnf install -y rust # programming language
+sudo dnf install -y cargo # rust package manager
 sudo dnf install -y gimp.x86_64 # image editing software
 sudo dnf install -y keepassxc.x86_64 # password manager
 sudo dnf install -y htop.x86_64 # resource monitor
@@ -100,7 +103,6 @@ sudo dnf install -y pandoc.x86_64 # document converter
 sudo dnf install -y vim-jedi.noarch # python autocompletion
 sudo dnf install -y poetry.noarch # python project management tool
 sudo dnf install -y lynis.noarch # security and system auditing tool
-sudo dnf install -y glow.x86_64 # markdown on CLI
 sudo dnf install -y calibre.x86_64 # ebook manager
 sudo dnf install -y inkscape.x86_64 # drawing tool
 sudo dnf install -y audacity.x86_64 # audio tool
@@ -115,6 +117,11 @@ sudo dnf install -y openvpn.x86_64 # VPN
 sudo dnf install -y wine.x86_64 # windows compatibility layer
 sudo dnf install -y arduino.noarch # arduino IDE
 sudo dnf install -y pdfgrep.x86_64 # pdf searching tool
+sudo dnf install -y chromium.x86_64 # web browser
+
+# set vim as default text editor
+sudo dnf remove -y nano-default-editor
+sudo dnf install -y vim-default-editor
 
 # clean up
 sudo dnf clean all
