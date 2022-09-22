@@ -70,6 +70,8 @@ sudo dnf install -y vim-airline.noarch # vim status-line/prompt utility
 sudo dnf install -y vim-trailing-whitespace.noarch # vim whitespace plugin
 sudo dnf install -y rust # programming language
 sudo dnf install -y cargo # rust package manager
+sudo dnf install -y rustfmt # rust formatter
+sudo dnf install -y clippy # rust linter
 sudo dnf install -y gimp.x86_64 # image editing software
 sudo dnf install -y keepassxc.x86_64 # password manager
 sudo dnf install -y htop.x86_64 # resource monitor
