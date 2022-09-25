@@ -124,6 +124,7 @@ sudo dnf install -y cfn-lint # AWS CloudFormation linter
 sudo dnf install -y awscli # AWS CLI
 sudo dnf install -y python3-boto3.noarch # Python AWS SDK
 sudo dnf install -y hugo.x86_64 # static website generator
+sudo dnf install -y neofetch # system information
 
 # set vim as default text editor
 sudo dnf remove -y nano-default-editor
