@@ -118,7 +118,6 @@ sudo dnf install -y spectre-meltdown-checker.noarch # Spectre & Meltdown checker
 sudo dnf install -y wireguard-tools.x86_64 # VPN
 sudo dnf install -y openvpn.x86_64 # VPN
 sudo dnf install -y wine.x86_64 # windows compatibility layer
-sudo dnf install -y arduino.noarch # arduino IDE
 sudo dnf install -y pdfgrep.x86_64 # pdf searching tool
 sudo dnf install -y chromium.x86_64 # web browser
 sudo dnf install -y cfn-lint # AWS CloudFormation linter
