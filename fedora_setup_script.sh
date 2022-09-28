@@ -125,6 +125,7 @@ sudo dnf install -y awscli # AWS CLI
 sudo dnf install -y python3-boto3.noarch # Python AWS SDK
 sudo dnf install -y hugo.x86_64 # static website generator
 sudo dnf install -y neofetch # system information
+sudo dnf install -y fzf.x86_64 # fuzzy finder
 pip3 install --user cfn-flip # switch between json and yml cfn
 
 # set vim as default text editor
