@@ -127,6 +127,8 @@ sudo dnf install -y hugo.x86_64 # static website generator
 sudo dnf install -y neofetch # system information
 sudo dnf install -y fzf.x86_64 # fuzzy finder
 sudo dnf install -y polybar # status bar
+sudo dnf install -y picom # compositor
+sudo dnf install -y nitrogen # wallpaper
 pip3 install --user cfn-flip # switch between json and yml cfn
 
 # set vim as default text editor
