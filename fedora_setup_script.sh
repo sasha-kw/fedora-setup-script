@@ -129,6 +129,7 @@ sudo dnf install -y fzf.x86_64 # fuzzy finder
 sudo dnf install -y polybar # status bar
 sudo dnf install -y picom # compositor
 sudo dnf install -y nitrogen # wallpaper
+sudo dnf install -y vim-gitgutter.noarch # git vim plugin
 pip3 install --user cfn-flip # switch between json and yml cfn
 
 # set vim as default text editor
