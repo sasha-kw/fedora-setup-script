@@ -51,8 +51,8 @@ cat <<EOF | sudo tee /etc/systemd/resolved.conf
 [Resolve]
 DNSOverTLS=yes
 DNSSEC=yes
-DNS=1.1.1.2#cloudflare-dns.com 1.0.0.2#cloudflare-dns.com
-FallbackDNS=1.1.1.2 1.0.0.2 1.1.1.1 1.0.0.1 8.8.8.8 8.8.4.4
+DNS=dns.quad9.net
+FallbackDNS=9.9.9.9 149.112.112.112 1.1.1.2 1.0.0.2 1.1.1.1 1.0.0.1
 LLMNR=no
 MulticastDNS=no
 Cache=yes
