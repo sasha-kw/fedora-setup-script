@@ -132,6 +132,7 @@ sudo dnf install -y nitrogen # wallpaper
 sudo dnf install -y vim-gitgutter.noarch # git vim plugin
 sudo dnf install -y @virtualization # virtualisation tools
 sudo dnf install -y rpi-imager.x86_64 # raspberry pi imager
+sudo dnf install -y gqrx.x86_64 # SDR application
 pip3 install --user cfn-flip # switch between json and yml cfn
 
 # set vim as default text editor
