@@ -93,6 +93,7 @@ sudo dnf install -y qrencode.x86_64 # qr code generator
 sudo dnf install -y strace.x86_64 # tracks system calls
 sudo dnf install -y tldr.noarch # similar to man pages with examples
 sudo dnf install -y cheat.x86_64 # similar to tldr
+sudo dnf install -y howdoi.noarch # help with cli
 sudo dnf install -y blueman.x86_64 # bluetooth manager
 sudo dnf install -y pdfarranger.noarch # PDF file merging, rearranging, and splitting
 sudo dnf install -y exif.x86_64 # jpg meta data tool
@@ -134,6 +135,7 @@ sudo dnf install -y @virtualization # virtualisation tools
 sudo dnf install -y rpi-imager.x86_64 # raspberry pi imager
 sudo dnf install -y gqrx.x86_64 # SDR application
 sudo dnf install -y bubblewrap.x86_64 # sandbox application
+sudo dnf install -y gh # github cli
 pip3 install --user cfn-flip # switch between json and yml cfn
 
 # set vim as default text editor
