@@ -136,6 +136,7 @@ sudo dnf install -y rpi-imager.x86_64 # raspberry pi imager
 sudo dnf install -y gqrx.x86_64 # SDR application
 sudo dnf install -y bubblewrap.x86_64 # sandbox application
 sudo dnf install -y gh # github cli
+sudo dnf install -y minicom.x86_64 # modem control and terminal emulation program
 pip3 install --user cfn-flip # switch between json and yml cfn
 
 # set vim as default text editor
