@@ -18,9 +18,15 @@ umask 077
 # ip6tables config
 cat <<EOF | sudo tee /etc/sysconfig/ip6tables
 *filter
-:INPUT DROP [0:0]
+:INPUT DROP [o:0]
 :FORWARD DROP [0:0]
 :OUTPUT DROP [0:0]
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p ipv6-icmp -j ACCEPT
+-A OUTPUT -o lo -j ACCEPT
+-A OUTPUT -m conntrack --ctstate NEW,RELATED,ESTABLISHED -j ACCEPT
+-A OUTPUT -p ipv6-icmp -j ACCEPT
 COMMIT
 EOF
 
