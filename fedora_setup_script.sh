@@ -18,15 +18,19 @@ umask 077
 # ip6tables config
 cat <<EOF | sudo tee /etc/sysconfig/ip6tables
 *filter
-:INPUT DROP [o:0]
+:INPUT DROP [0:0]
 :FORWARD DROP [0:0]
 :OUTPUT DROP [0:0]
 -A INPUT -i lo -j ACCEPT
 -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 -A INPUT -p ipv6-icmp -j ACCEPT
+# Optional: DHCPv6 client
+# -A INPUT -p udp -m udp --dport 546 -s fe80::/10 -j ACCEPT
 -A OUTPUT -o lo -j ACCEPT
 -A OUTPUT -m conntrack --ctstate NEW,RELATED,ESTABLISHED -j ACCEPT
 -A OUTPUT -p ipv6-icmp -j ACCEPT
+# Optional: DHCPv6 client
+# -A OUTPUT -p udp -m udp --sport 546 -j ACCEPT
 COMMIT
 EOF
 
